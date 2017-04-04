@@ -6,7 +6,7 @@ Ava is an open-source multi-server general discord bot, the bot is built using n
 Ava is designed to run with:
 - Multi-server support
 - Optional database integration
-- Production, staging and development environments powered by ([Docker](https://www.docker.com/what-docker))
+- Production, staging and development environments powered by [Docker](https://www.docker.com/what-docker)
 - Continuous integration testing
 
 Ava's features (Customisabe, features can be disabled and enabled for your server):
