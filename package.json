@@ -1,0 +1,24 @@
+{
+  "name": "ava-bot",
+  "version": "0.0.1",
+  "description": "A general purpose discord bot",
+  "author": "James Longman <jameslongman2@gmail.com>",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JamesLongman/ava-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JamesLongman/ava-bot/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.19.0",
+    "mocha": "^3.2.0"
+  }
+}

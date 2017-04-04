@@ -1,0 +1,5 @@
+{
+    "preset": "airbnb",
+    "maximumLineLength": 115,
+    "validateIndentation": 4
+}
