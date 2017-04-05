@@ -11,40 +11,38 @@ const environment = envConfig.environment;
 let config = {
     // Enviroment configs
     botUserID: envConfig.botUserID, // The user ID of the bot
+    root: envConfig.root, // The path to the project file
     token: envConfig.token, // Bot token
 
     // General Configs
-    environment: environment, // Environment (production, staging or testing)
+    environment, // Environment (production, staging or testing)
     testing: false, // If the bot is being tested (used very sparingly to not comprimise test validity)
 };
 
 module.exports = {
     // Getter function to pass the entire config object
-    getConfig: function () {
+    getConfig() {
         if (config) {
             return config;
-        } else {
-            return false;
         }
+        return false;
     },
 
     // Setter function for when we would like to set the value of the entire config
-    setConfig: function (newConfig) {
+    setConfig(newConfig) {
         if (newConfig !== undefined) {
             config = newConfig;
             return true;
-        } else {
-            return false;
         }
+        return false;
     },
 
     // Setter function for when we would like to set the value of a specific config property
-    setConfigProperty: function (property, value) {
+    setConfigProperty(property, value) {
         if (property !== undefined && value !== undefined) {
             config[property] = value;
             return true;
-        } else {
-            return false;
         }
+        return false;
     },
 };

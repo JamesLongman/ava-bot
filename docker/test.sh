@@ -5,9 +5,9 @@ cd app
 
 ### Final setup of dependencies ###
 echo "Running npm install / prune"
-npm install --only=production
+npm install
 npm prune
 
-### Setup now complete, attempt to run the main JS file ###
-echo "Starting Ava!!!"
-node lib/ava.js
+### Setup now complete, attempt to run tests ###
+echo "Starting tests!!!"
+npm test

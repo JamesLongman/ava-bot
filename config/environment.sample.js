@@ -1,3 +1,5 @@
+'use strict';
+
 /* This is a sample of the config.environment.js file which is git ignored so not in the repo, for the
 bot to work you need to make a config.environment.js file using this sample file and add
 your custom values to the properties */
