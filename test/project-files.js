@@ -2,12 +2,14 @@
 
 // Simply checks project level files such as README.md to make sure they exist
 
+/* eslint no-unused-vars: 0, no-unused-expressions: 0*/
+
 const should = require('chai').should();
 
 const config = require('../config/config.js');
 const fs = require('fs');
 
-describe('critical project files', () => {
+describe('project files', () => {
     it('should have eslint config', () => {
         fs.existsSync(`${config.getConfig().root}/.eslintrc.json`).should.be.true;
     });

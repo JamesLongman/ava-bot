@@ -25,11 +25,9 @@
             "always"
         ],
         "no-console": 0,
-        "no-unused-expressions": 1,
-        "no-unused-vars": 1,
         "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
         "max-len": [
-            2,
+            1,
             110
         ]
     }
