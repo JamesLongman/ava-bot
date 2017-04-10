@@ -3,13 +3,15 @@
 ## About
 Ava is an open-source multi-server general discord bot, the bot is built using node.js with the ([discord.js](https://github.com/hydrabolt/discord.js)) API library.
 
+The main purpose of Ava is to provide example code from which you may build your own bot. Ava's code is designed with modular programming in mind so isolating the code for one particular feature should hopefully not be too difficult.
+
 Ava is designed to run with:
 - Multi-server support
 - Optional database integration
 - Production, staging and development environments powered by [Docker](https://www.docker.com/what-docker)
 - Continuous integration testing
 
-Ava's features (Customisabe, features can be disabled and enabled for your server):
+Ava's features (Customisable, features can be disabled and enabled for your server):
 - Multiple commands (list below)
 - Automatic moderation
 - Admin commands
