@@ -3,3 +3,6 @@ node_modules
 
 # Do not include log files (most commonly npm error logs)
 *.log
+
+# Do not include changes to local config files
+config/environment.js
