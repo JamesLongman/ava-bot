@@ -22,20 +22,12 @@ describe('project files', () => {
         fs.existsSync(`${config.getConfig().root}/.gitignore`).should.be.true;
     });
 
-    it('should have test docker composistion', () => {
-        fs.existsSync(`${config.getConfig().root}/docker-compose-test.yml`).should.be.true;
-    });
-
     it('should have standard (development) docker composition', () => {
         fs.existsSync(`${config.getConfig().root}/docker-compose.yml`).should.be.true;
     });
 
     it('should have bot Dockerfile', () => {
         fs.existsSync(`${config.getConfig().root}/Dockerfile`).should.be.true;
-    });
-
-    it('should have test Dockerfile', () => {
-        fs.existsSync(`${config.getConfig().root}/Dockerfile.test`).should.be.true;
     });
 
     it('should have LICENSE', () => {

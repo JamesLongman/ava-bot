@@ -13,8 +13,4 @@ describe('docker files', () => {
     it('should have run bash script', () => {
         fs.existsSync(`${config.getConfig().root}/docker/run.sh`).should.be.true;
     });
-
-    it('should have test bash script', () => {
-        fs.existsSync(`${config.getConfig().root}/docker/test.sh`).should.be.true;
-    });
 });
