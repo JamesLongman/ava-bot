@@ -18,4 +18,18 @@ describe('config files', () => {
     it('should have environment file', () => {
         fs.existsSync(`${config.getConfig().root}/config/environment.js`).should.be.true;
     });
+
+    describe('development files', () => {
+        fs.existsSync(`${config.getConfig().root}/config/development/general.js`).should.be.true;
+    });
+
+    describe('production files', () => {
+    });
+
+    describe('staging files', () => {
+    });
+
+    describe('testing files', () => {
+        fs.existsSync(`${config.getConfig().root}/config/testing/general.js`).should.be.true;
+    });
 });

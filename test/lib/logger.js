@@ -10,6 +10,7 @@ const log = require('../../lib/logger.js')(module);
 
 describe('lib/logger.js', () => {
     it('should have correct logging methods', () => {
+        log.silly.should.be.a('function');
         log.debug.should.be.a('function');
         log.verbose.should.be.a('function');
         log.info.should.be.a('function');

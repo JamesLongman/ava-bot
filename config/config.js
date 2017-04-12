@@ -3,10 +3,15 @@
 /* Primary config module, using getters and setters this module can alter the config
 and pull valuesfrom other files */
 
+/* eslint import/no-dynamic-require: 0 */
+
 const envConfig = require('./environment.js');
 
 // Require enviroment first so we are able to use environment specific configs
 const environment = envConfig.environment;
+
+// Require environment specific configs
+const generalConfig = require(`./${environment}/general.js`);
 
 let config = {
     // Enviroment configs
@@ -14,9 +19,11 @@ let config = {
     root: envConfig.root, // The path to the project file
     token: envConfig.token, // Bot token
 
-    // General Configs
+    // Basic Configs
     environment, // Environment (production, staging or testing)
-    testing: false, // If the bot is being tested (used very sparingly to not comprimise test validity)
+
+    // Environment specific configs
+    general: generalConfig,
 };
 
 module.exports = {
