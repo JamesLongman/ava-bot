@@ -8,9 +8,19 @@ Travis CI for the project */
 
 module.exports = {
     /* Your bot's user ID, shown when you obtained the token, or you can right click on the bot on
-    discord and copy its ID directly if you have dev mode enabled in your discord settings*/
-    botUserID: false,
+    discord and copy its ID directly if you have dev mode enabled in your discord settings, should
+    be a string */
+    botUserID: '5838398763863863',
 
+    // Database info for mysql connections, in docker this will be:
+    database: {
+        host: 'mysql',
+        user: 'local',
+        password: '123',
+        database: 'Ava',
+        port: '3306',
+    },
+    
     /* The environment is a string, either "development" (for local running), "staging" (for a test server
     hosted version), or "production" (for a live server hosted version)
 
@@ -20,8 +30,7 @@ module.exports = {
     /* The file path to your project folder ("/app" by default in docker) */
     root: '/home/travis/build/JamesLongman/ava-bot',
 
-    /* Required
-    Your bot token, obtained from: https://discordapp.com/developers/applications/me
-    Should be a string, example:."token: 'gh58gjTHjtk5GG5ofdpcmMGU539FC'," */
-    token: false,
+    /* Your bot token, obtained from: https://discordapp.com/developers/applications/me
+    Should be a string */
+    token: '59774FDGJ££6wgdG54FGY%£Wdjglkn4$$gm;&Gbjrj5',
 };
