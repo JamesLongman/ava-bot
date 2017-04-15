@@ -20,7 +20,7 @@ module.exports = {
         database: 'Ava',
         port: '3306',
     },
-    
+
     /* The environment is a string, either "development" (for local running), "staging" (for a test server
     hosted version), or "production" (for a live server hosted version)
 
