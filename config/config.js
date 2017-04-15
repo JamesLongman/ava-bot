@@ -16,11 +16,10 @@ const generalConfig = require(`./${environment}/general.js`);
 let config = {
     // Enviroment configs
     botUserID: envConfig.botUserID, // The user ID of the bot
+    database: envConfig.database, // mysql database connection data
+    environment, // Environment (production, staging, development or testing)
     root: envConfig.root, // The path to the project file
     token: envConfig.token, // Bot token
-
-    // Basic Configs
-    environment, // Environment (production, staging or testing)
 
     // Environment specific configs
     general: generalConfig,

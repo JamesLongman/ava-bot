@@ -4,8 +4,23 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
+        depends_on:
+            - mysql
         ports:
             - "5000:5000"
         volumes:
             - ./:/ava
         entrypoint: /app/run.sh
+    mysql:
+        image: mysql:5.7
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=123
+            - MYSQL_DATABASE=Ava
+            - MYSQL_USER=local
+            - MYSQL_PASSWORD=123
+        volumes:
+             - ava-datavolume:/app/mysql
+volumes:
+    ava-datavolume:
