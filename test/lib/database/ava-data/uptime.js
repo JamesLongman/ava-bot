@@ -8,9 +8,9 @@ const should = require('chai').should();
 
 const uptime = require('../../../../lib/database/ava-data/uptime.js');
 
-describe('lib/client-events.js', () => {
+describe('lib/database/ava-data/uptime.js', () => {
     it('should have function boot', () => {
         uptime.should.have.property('boot');
-        uptime.disconnect.should.be.a('function');
+        uptime.boot.should.be.a('function');
     });
 });
