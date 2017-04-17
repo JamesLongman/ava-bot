@@ -2,12 +2,11 @@
 
 // Tests ping.js
 
-/* eslint no-unused-vars: 0, no-unused-expressions: 0*/
+/* eslint no-unused-vars: 0, no-unused-expressions: 0 */
 
 const should = require('chai').should();
 
-const ping = require('../../../lib/commands/ping.js');
-const fakeObjects = require('../../testTools/fakeDiscordObjects.js');
+const ping = require('../../../../../lib/commands/commandModules/bot/ping.js');
 
 describe('lib/commands/ping.js', () => {
     it('should have function execute', () => {
@@ -16,17 +15,24 @@ describe('lib/commands/ping.js', () => {
     });
 
     describe('test execute', () => {
-        const message = fakeObjects.message;
+        const message = {
+            author: {
+                bot: false,
+                id: '301159838132469760',
+                username: 'James L',
+            },
+            cleanContent: 'Hi',
+            content: 'Hi',
+            guild: {
+                id: '301160200163950604',
+                name: 'Ava',
+            },
+            member: {
+                displayName: 'James L',
+            },
+        };
         let channelMessage = false;
         const edits = [];
-        message.channel = {};
-        message.channel.sendMessage = function sendMessage(relay) {
-            channelMessage = relay;
-            return new Promise((resolve) => {
-                resolve(secondMessage);
-            });
-        };
-        message.createdTimestamp = 0;
         const secondMessage = {
             createdTimestamp: 0,
             edit(relay) {
@@ -36,6 +42,14 @@ describe('lib/commands/ping.js', () => {
                 });
             },
         };
+        message.channel = {};
+        message.channel.sendMessage = function sendMessage(relay) {
+            channelMessage = relay;
+            return new Promise((resolve) => {
+                resolve(secondMessage);
+            });
+        };
+        message.createdTimestamp = 0;
 
         before((done) => {
             secondMessage.createdTimestamp = 10;

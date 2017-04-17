@@ -2,14 +2,30 @@
 
 // Tests client-events.js
 
-/* eslint no-unused-vars: 0, no-unused-expressions: 0*/
+/* eslint no-unused-vars: 0, no-unused-expressions: 0 */
 
 const should = require('chai').should();
 
 const clientEvents = require('../../lib/client-events.js');
-const fakeObjects = require('../testTools/fakeDiscordObjects');
 
 describe('lib/client-events.js', () => {
+    const message = {
+        author: {
+            bot: false,
+            id: '301159838132469760',
+            username: 'James L',
+        },
+        cleanContent: 'Hi',
+        content: 'Hi',
+        guild: {
+            id: '301160200163950604',
+            name: 'Ava',
+        },
+        member: {
+            displayName: 'James L',
+        },
+    };
+
     it('should have function disconnect', () => {
         clientEvents.should.have.property('disconnect');
         clientEvents.disconnect.should.be.a('function');
@@ -21,8 +37,6 @@ describe('lib/client-events.js', () => {
     });
 
     describe('message', () => {
-        const message = fakeObjects.message;
-
         beforeEach(() => {
             message.author.bot = false;
         });

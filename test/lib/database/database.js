@@ -2,7 +2,7 @@
 
 // Tests database.js
 
-/* eslint no-unused-vars: 0, no-unused-expressions: 0*/
+/* eslint no-unused-vars: 0, no-unused-expressions: 0 */
 
 const should = require('chai').should();
 
