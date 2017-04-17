@@ -3,6 +3,9 @@
 /* This is the config/environment.js file which is the primary config file which holds critical values
 such as the bot token and the environment the bot is set to run in
 
+If you wish to push to the repo, you will need to run "git update-index --assume-unchanged config/environment.js"
+after edditing this file before you can commit
+
 This file, as well as serving as an example, will actually be the environment.js version used by the
 Travis CI for the project */
 
@@ -12,7 +15,7 @@ module.exports = {
     be a string */
     botUserID: '5838398763863863',
 
-    // Database info for mysql connections, in docker this will be:
+    // Database info for mysql connections, the default is configured for the docker setup
     database: {
         host: 'mysql',
         user: 'local',
@@ -27,7 +30,7 @@ module.exports = {
     Additionally there is the testing environment which is to be used by Travis */
     environment: 'testing',
 
-    /* The file path to your project folder ("/app" by default in docker) */
+    // The file path to your project folder ("/app" by default in docker)
     root: '/home/travis/build/JamesLongman/ava-bot',
 
     /* Your bot token, obtained from: https://discordapp.com/developers/applications/me
