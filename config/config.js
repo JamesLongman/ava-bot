@@ -12,6 +12,7 @@ const environment = envConfig.environment;
 
 // Require environment specific configs
 const generalConfig = require(`./${environment}/general.js`);
+const preferencesConfig = require(`./${environment}/preferences.js`);
 
 let config = {
     // Enviroment configs
@@ -23,6 +24,7 @@ let config = {
 
     // Environment specific configs
     general: generalConfig,
+    preferences: preferencesConfig,
 };
 
 module.exports = {

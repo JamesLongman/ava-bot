@@ -41,11 +41,13 @@ describe('lib/commands/commandModules/core/help.js', () => {
         };
 
         before((done) => {
-            const details = {
-                fail: 'nope',
-                success: 'test passed',
-                failCase: 'fail case',
-            };
+            function details() {
+                return {
+                    fail: 'nope',
+                    success: 'test passed',
+                    failCase: 'fail case',
+                };
+            }
             const first = setTimeout(() => {
                 message.cleanContent = '%help';
                 help.execute(message, details);
@@ -73,7 +75,7 @@ describe('lib/commands/commandModules/core/help.js', () => {
             channelMessages[1].should.eql('`%success` test passed');
         });
 
-        it('should respond with more in depth explination of help if command/feature isn\'t recognised', () => {
+        it('should respond with more in depth explanation of help if command/feature isn\'t recognised', () => {
             channelMessages[2].indexOf('Sorry I couldn\'t recognise that command/feat').should.eql(0);
         });
     });

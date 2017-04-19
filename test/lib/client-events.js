@@ -15,10 +15,13 @@ describe('lib/client-events.js', () => {
             id: '301159838132469760',
             username: 'James L',
         },
+        channel: {
+            type: 'text',
+        },
         cleanContent: 'Hi',
         content: 'Hi',
         guild: {
-            id: '301160200163950604',
+            id: '97765548393685686',
             name: 'Ava',
         },
         member: {
@@ -48,7 +51,7 @@ describe('lib/client-events.js', () => {
         });
 
         it('should return false if message has invalid prefix', () => {
-            message.content = '!ping';
+            message.content = '@ping';
             clientEvents.message(message).should.be.false;
         });
 

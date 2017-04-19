@@ -29,6 +29,9 @@ describe('lib/commands/commandModules/core/commands.js', () => {
             },
             member: {
                 displayName: 'James L',
+                hasPermission(perm) {
+                    return false;
+                },
             },
         };
         let channelMessage = false;
@@ -48,10 +51,12 @@ describe('lib/commands/commandModules/core/commands.js', () => {
         };
 
         before((done) => {
-            const summary = {
-                core: ['one', 'two'],
-                bot: ['one', 'two'],
-            };
+            function summary(prefix) {
+                return {
+                    core: ['one', 'two'],
+                    bot: ['one', 'two'],
+                };
+            }
             commands.execute(message, summary);
             const complete = setTimeout(done, 1); // Give promise time to execute
         });
