@@ -33,7 +33,7 @@ describe('lib/commands/commands.js', () => {
         },
     };
 
-    describe('function commandCall', () => {
+    /* describe('function commandCall', () => {
         it('should function commandCall', () => {
             commands.should.have.property('commandCall');
             commands.commandCall.should.be.an('function');
@@ -46,7 +46,7 @@ describe('lib/commands/commands.js', () => {
         it('commandCall should return false if there is no valid command', () => {
             commands.commandCall('notARealCommand', message).should.be.false;
         });
-    });
+    }); */
 
     it('should have array of all commands', () => {
         commands.should.have.property('commandsList');
@@ -57,7 +57,7 @@ describe('lib/commands/commands.js', () => {
     describe('function filter', () => {
         it('should function filter', () => {
             commands.should.have.property('filter');
-            commands.filter.should.be.an('function');
+            commands.filter.should.be.a('function');
         });
 
         it('filter should return true if the message contains a valid command', () => {
@@ -79,6 +79,6 @@ describe('lib/commands/commands.js', () => {
 
     it('should function prefix', () => {
         commands.should.have.property('prefix');
-        commands.prefix.should.be.an('function');
+        commands.prefix.should.be.a('function');
     });
 });

@@ -14,7 +14,7 @@ describe('lib/commands/commandModules/core/help.js', () => {
         help.execute.should.be.a('function');
     });
 
-    describe('test execute', () => {
+    /* describe('test execute', () => {
         const message = {
             author: {
                 bot: false,
@@ -78,5 +78,5 @@ describe('lib/commands/commandModules/core/help.js', () => {
         it('should respond with more in depth explanation of help if command/feature isn\'t recognised', () => {
             channelMessages[2].indexOf('Sorry I couldn\'t recognise that command/feat').should.eql(0);
         });
-    });
+    });*/
 });
