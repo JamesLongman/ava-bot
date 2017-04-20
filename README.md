@@ -1,5 +1,7 @@
 # This bot is currently in development and not very functional
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bcf7d84591754b8b8a9f84d6bed6db0a)](https://www.codacy.com/app/JamesLongman/ava-bot?utm_source=github.com&utm_medium=referral&utm_content=JamesLongman/ava-bot&utm_campaign=badger)
+
 ## About
 Ava is an open-source multi-server general discord bot, the bot is built using node.js with the ([discord.js](https://github.com/hydrabolt/discord.js)) API library.
 
