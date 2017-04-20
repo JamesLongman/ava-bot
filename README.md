@@ -1,6 +1,6 @@
 # This bot is currently in development and not very functional
 
-[![Build Status](https://travis-ci.org/JamesLongman/ava-bot.svg?branch=master)](https://travis-ci.org/JamesLongman/ava-bot)
+[![Build Status](https://travis-ci.org/JamesLongman/ava-discordbot.svg?branch=master)](https://travis-ci.org/JamesLongman/ava-discordbot)
 [![Coverage Status](https://coveralls.io/repos/github/JamesLongman/ava-discordbot/badge.svg?branch=master)](https://coveralls.io/github/JamesLongman/ava-discordbot?branch=master)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/bcf7d84591754b8b8a9f84d6bed6db0a)](https://www.codacy.com/app/JamesLongman/ava-bot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JamesLongman/ava-bot&amp;utm_campaign=Badge_Grade)
 
