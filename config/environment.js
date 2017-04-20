@@ -31,7 +31,7 @@ module.exports = {
     environment: 'testing',
 
     // The file path to your project folder ("/app" by default in docker)
-    root: '/home/travis/build/JamesLongman/ava-bot',
+    root: '/home/travis/build/JamesLongman/ava-discordbot',
 
     /* Your bot token, obtained from: https://discordapp.com/developers/applications/me
     Should be a string */

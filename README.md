@@ -1,8 +1,13 @@
 # This bot is currently in development and not very functional
 
-[![Build Status](https://travis-ci.org/JamesLongman/ava-bot.svg?branch=master)](https://travis-ci.org/JamesLongman/ava-bot)
-[![Coverage Status](https://coveralls.io/repos/github/JamesLongman/ava-discordbot/badge.svg?branch=master)](https://coveralls.io/github/JamesLongman/ava-discordbot?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/bcf7d84591754b8b8a9f84d6bed6db0a)](https://www.codacy.com/app/JamesLongman/ava-bot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JamesLongman/ava-bot&amp;utm_campaign=Badge_Grade)
+<div align="center">
+  <p>
+     <a href="https://travis-ci.org/JamesLongman/ava-discordbot"><img src="https://travis-ci.org/JamesLongman/ava-discordbot.svg?branch=master"/></a>
+     <a href='https://coveralls.io/github/JamesLongman/ava-discordbot'><img src='https://coveralls.io/repos/github/JamesLongman/ava-discordbot/badge.svg' alt='Coverage Status' /></a>
+    <a href="https://www.codacy.com/app/James-LongmanOrganization/ava-discordbot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JamesLongman/ava-discordbot&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/917e7c704f2546abb72862a8c51982a7"/></a>
+    <a href="https://david-dm.org/JamesLongman/ava-discordbot" title="dependencies status"><img src="https://david-dm.org/JamesLongman/ava-discordbot/status.svg"/></a>
+  </p>
+</div>
 
 ## About
 Ava is an open-source multi-server general discord bot, the bot is built using node.js with the ([discord.js](https://github.com/hydrabolt/discord.js)) API library.
