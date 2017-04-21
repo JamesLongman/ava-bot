@@ -22,5 +22,6 @@ services:
         volumes:
             - ./:/ava
         entrypoint: /app/run.sh
+        tty: true
 volumes:
     ava-datavolume:

@@ -17,9 +17,4 @@ describe('lib/logger.js', () => {
         log.warn.should.be.a('function');
         log.error.should.be.a('function');
     });
-
-    it('should only output to console', () => {
-        Object.keys(log.transports).length.should.eql(1);
-        log.transports.console.should.be.an('object');
-    });
 });
