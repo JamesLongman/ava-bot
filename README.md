@@ -16,15 +16,17 @@ The main purpose of Ava is to provide example code from which you may build your
 
 Ava is designed to run with:
 - Multi-server support
-- Database integration
+- Integration with a MySQL database
 - Production, staging and development environments powered by [Docker](https://www.docker.com/what-docker)
-- Continuous integration testing
+- CI tests run by [Travis](https://travis-ci.org/JamesLongman/ava-discordbot)
 
 Ava's features (Customisable, features can be disabled and enabled for your server):
 - Multiple commands (list below)
 - Automatic moderation
 - Admin commands
 - Server member statistic tracking
+
+The Ava project complies with community [best practices](https://github.com/meew0/discord-bot-best-practices) for discord bots
 
 ## Code usage
 The Ava bot is developed open-source under the MIT license, feel free to use the entire code or sections however you like with attribution.
