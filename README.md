@@ -11,7 +11,7 @@
 </div>
 
 ## About
-Ava is an open-source multi-server general discord bot, the bot is built using node.js with the ([discord.js](https://github.com/hydrabolt/discord.js)) API library.
+Ava is an open-source multi-server general discord bot, the bot is built using node.js with the [discord.js](https://github.com/hydrabolt/discord.js) API library.
 
 The main purpose of Ava is to provide example code from which you may build your own bot. Ava's code is designed with modular programming in mind so isolating the code for one particular feature should hopefully not be too difficult.
 
