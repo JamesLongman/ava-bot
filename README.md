@@ -38,3 +38,4 @@ If you are able to run Docker then running Ava is as simple as cloning the repos
 However if you are not able to run Docker you can also run the bot manually by running the lib/ava.js script in node. Please however note this will require:
 - Node.js 6.0.0 or higher
 - package.json dependencies
+- Python and node-gyp build tools (if you're on windows you can use "npm install -g windows-build-tools" when running your CLI as admin)

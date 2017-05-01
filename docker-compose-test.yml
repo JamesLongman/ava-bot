@@ -14,14 +14,14 @@ services:
     node:
         build:
             context: .
-            dockerfile: docker/Dockerfile
+            dockerfile: docker/Dockerfile-test
         depends_on:
             - mysql
         ports:
             - "5000:5000"
         volumes:
             - ./:/ava
-        entrypoint: /app/run.sh
+        entrypoint: /app/test.sh
         tty: true
 volumes:
     ava-datavolume:

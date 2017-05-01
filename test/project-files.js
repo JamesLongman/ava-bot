@@ -26,10 +26,6 @@ describe('project files', () => {
         fs.existsSync(`${config.getConfig().root}/docker-compose.yml`).should.be.true;
     });
 
-    it('should have bot Dockerfile', () => {
-        fs.existsSync(`${config.getConfig().root}/Dockerfile`).should.be.true;
-    });
-
     it('should have LICENSE', () => {
         fs.existsSync(`${config.getConfig().root}/LICENSE`).should.be.true;
     });
