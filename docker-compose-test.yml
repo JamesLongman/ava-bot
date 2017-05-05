@@ -21,7 +21,7 @@ services:
             - "5000:5000"
         volumes:
             - ./:/ava
-        entrypoint: /app/test.sh
+        command: /app/test.sh
         tty: true
 volumes:
     ava-datavolume:
