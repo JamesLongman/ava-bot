@@ -14,5 +14,3 @@ shopt -s globstar
 ls
 echo "Starting Tests!!!"
 ./node_modules/istanbul/lib/cli.js --include-all-sources cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*.js
-
-"cat app/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
