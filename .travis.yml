@@ -40,5 +40,7 @@ before_install:
 script:
     - docker-compose -f docker-compose-test.yml up --build
 
-after_script:
+after_success:
+    - docker-compose --version
+    - ls
     - cat /app/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
