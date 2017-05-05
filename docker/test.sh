@@ -11,6 +11,5 @@ npm prune
 shopt -s globstar
 
 ### Setup now complete, attempt to run the main JS file ###
-ls
 echo "Starting Tests!!!"
 ./node_modules/istanbul/lib/cli.js --include-all-sources cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*.js
