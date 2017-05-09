@@ -1,4 +1,4 @@
-# Ignore docker files
+# Ignore Docker files
 docker/Dockerfile
 docker/Dockerfile-test
 .dockerignore
