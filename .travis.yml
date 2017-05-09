@@ -44,5 +44,5 @@ script:
     - docker-compose exec node ./app/test.sh
 
 after_script:
-    - docker-compose exec node cat ./app/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+    - docker-compose exec node cat ./app/coverage/lcov.info | ./app/node_modules/coveralls/bin/coveralls.js
     - docker-compose down
