@@ -41,8 +41,8 @@ before_script:
     - docker-compose -f docker-compose-test.yml up --build -d
 
 script:
-    - docker-compose exec ./app/test.sh
+    - docker-compose exec node ./app/test.sh
 
 after_script:
-    - docker-compose stop
     - cat /app/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+    - docker-compose down
