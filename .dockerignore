@@ -2,6 +2,3 @@
 docker/Dockerfile
 docker/Dockerfile-test
 .dockerignore
-
-#Ignore local node modules so docker environment can build fresh
-node_modules
