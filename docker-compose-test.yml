@@ -21,7 +21,6 @@ services:
             - "5000:5000"
         volumes:
             - ./:/ava
-        command: /app/test.sh
         tty: true
 volumes:
     ava-datavolume:

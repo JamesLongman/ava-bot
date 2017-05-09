@@ -37,10 +37,12 @@ before_install:
   # before doing the update.
   - docker-compose --version
 
-script:
-    - docker-compose -f docker-compose-test.yml up --build
+before_script:
+    - docker-compose -f docker-compose-test.yml up --build -d
 
-after_success:
-    - docker-compose --version
-    - ls
+script:
+    - docker-compose exec ./app/test.sh
+
+after_script:
+    - docker-compose stop
     - cat /app/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
