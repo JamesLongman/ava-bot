@@ -11,3 +11,5 @@ RUN chmod +x /app/test.sh
 
 ### Bundle source files into the Docker image's app directory ###
 COPY . /app
+
+ENV PATH "$PATH:./app"

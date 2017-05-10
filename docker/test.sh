@@ -12,4 +12,4 @@ shopt -s globstar
 
 ### Setup now complete, attempt to run the main JS file ###
 echo "Starting Tests!!!"
-./node_modules/istanbul/lib/cli.js --include-all-sources cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*.js
+./node_modules/istanbul/lib/cli.js --include-all-sources cover ./node_modules/mocha/bin/_mocha -- -R spec ./test/**/*.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
