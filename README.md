@@ -3,7 +3,7 @@
 <div align="center">
   <p>
      <a href="https://travis-ci.org/JamesLongman/ava-discordbot"><img src="https://travis-ci.org/JamesLongman/ava-discordbot.svg?branch=master"/></a>
-     <a href='https://coveralls.io/github/JamesLongman/ava-discordbot'><img src='https://coveralls.io/repos/github/JamesLongman/ava-discordbot/badge.svg' alt='Coverage Status' /></a>
+     <a href='https://coveralls.io/github/JamesLongman/ava-discordbot?branch='><img src='https://coveralls.io/repos/github/JamesLongman/ava-discordbot/badge.svg?branch=' alt='Coverage Status' /></a>
     <a href="https://www.codacy.com/app/James-LongmanOrganization/ava-discordbot?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JamesLongman/ava-discordbot&amp;utm_campaign=Badge_Grade"><img src="https://api.codacy.com/project/badge/Grade/917e7c704f2546abb72862a8c51982a7"/></a>
     <a href="https://david-dm.org/JamesLongman/ava-discordbot" title="dependencies status"><img src="https://david-dm.org/JamesLongman/ava-discordbot/status.svg"/></a>
     <a href="https://github.com/JamesLongman/ava-discordbot/blob/master/LICENSE"><img src="https://img.shields.io/github/license/JamesLongman/ava-discordbot.svg"></a>
